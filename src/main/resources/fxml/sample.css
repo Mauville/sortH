@@ -1,0 +1,11 @@
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #bbbbbb;
+}
+.grid{
+    -fx-font-size: 19px;
+}
+.imageview{
+    -fx-margin: 0,auto;
+}
