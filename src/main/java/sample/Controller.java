@@ -164,8 +164,7 @@ public class Controller {
         }
         try {
             LOGGER.info("Loading Images");
-            imageFiles = ImageHandler.getImages("C:\\Users\\X220\\Desktop\\images");
-            cwd = new File("C:\\Users\\X220\\Desktop\\images");
+            imageFiles = ImageHandler.getImages(cwd);
             displayNext();
             LOGGER.info("Loaded Images");
         } catch (IOException e) {
