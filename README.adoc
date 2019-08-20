@@ -1,0 +1,6 @@
+= sortH
+
+Sorting images to appropiate folders. 
+Uses JavaFX and Maven to handle dependencies.
+
+First time Maven actually cooperates. It actually felt like it helped this time.
