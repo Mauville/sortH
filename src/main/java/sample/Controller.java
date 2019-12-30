@@ -56,16 +56,16 @@ public class Controller {
     GridPane num = new GridPane();
 
     //Keyboard shortcuts
-    private final KeyCombination PCode = new KeyCodeCombination(KeyCode.DIGIT8);
-    private final KeyCombination threedeeCode = new KeyCodeCombination(KeyCode.DIGIT4);
-    private final KeyCombination TCode = new KeyCodeCombination(KeyCode.DIGIT2);
-    private final KeyCombination NPCode = new KeyCodeCombination(KeyCode.DIGIT6);
-    private final KeyCombination FDCode = new KeyCodeCombination(KeyCode.DIGIT8, KeyCombination.CONTROL_DOWN);
-    private final KeyCombination ECCode = new KeyCodeCombination(KeyCode.DIGIT4, KeyCombination.CONTROL_DOWN);
-    private final KeyCombination ACode = new KeyCodeCombination(KeyCode.DIGIT2, KeyCombination.CONTROL_DOWN);
-    private final KeyCombination OCode = new KeyCodeCombination(KeyCode.DIGIT6, KeyCombination.CONTROL_DOWN);
-    private final KeyCombination SkipCode = new KeyCodeCombination(KeyCode.DIGIT0, KeyCombination.CONTROL_DOWN);
-    private final KeyCombination SkipCode2 = new KeyCodeCombination(KeyCode.DIGIT0);
+    private final KeyCombination PCode = new KeyCodeCombination(KeyCode.UP);
+    private final KeyCombination ECCode = new KeyCodeCombination(KeyCode.LEFT);
+    private final KeyCombination TCode = new KeyCodeCombination(KeyCode.DOWN);
+    private final KeyCombination NPCode = new KeyCodeCombination(KeyCode.RIGHT);
+    private final KeyCombination FDCode = new KeyCodeCombination(KeyCode.UP, KeyCombination.CONTROL_DOWN);
+    private final KeyCombination  threedeeCode = new KeyCodeCombination(KeyCode.LEFT, KeyCombination.CONTROL_DOWN);
+    private final KeyCombination ACode = new KeyCodeCombination(KeyCode.DOWN, KeyCombination.CONTROL_DOWN);
+    private final KeyCombination OCode = new KeyCodeCombination(KeyCode.RIGHT, KeyCombination.CONTROL_DOWN);
+    private final KeyCombination SkipCode = new KeyCodeCombination(KeyCode.SPACE, KeyCombination.CONTROL_DOWN);
+    private final KeyCombination SkipCode2 = new KeyCodeCombination(KeyCode.SPACE);
 
     private List<File> imageFiles;
     private File cwd;

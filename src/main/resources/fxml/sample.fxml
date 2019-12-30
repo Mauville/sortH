@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.geometry.Rectangle2D?>
-<?import javafx.scene.Group?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <center>
       <Group BorderPane.alignment="CENTER">
          <children>
@@ -42,7 +33,7 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fx:id="logField" strokeType="OUTSIDE" strokeWidth="0.0" text="Press 0 to Skip. Use numlock and control">
+            <Text fx:id="logField" strokeType="OUTSIDE" strokeWidth="0.0" text="Press SPACE to Skip. Use Arrows and Ctrl">
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />
                </HBox.margin>
@@ -73,7 +64,7 @@
                         <Font name="Consolas" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="threedee" alignment="CENTER" prefHeight="22.0" prefWidth="53.0" text="3" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                  <Label fx:id="EC" alignment="CENTER" prefHeight="22.0" prefWidth="53.0" text="EC" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                      <font>
                         <Font name="Consolas" size="24.0" />
                      </font>
@@ -95,7 +86,6 @@
                   </Label>
                </children>
             </GridPane>
-            <Button fx:id="button" mnemonicParsing="false" onAction="#setAccel" text="Set Accel" />
          </children>
       </Group>
    </left>
@@ -119,7 +109,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="EC" alignment="CENTER" prefHeight="22.0" prefWidth="57.0" text="EC" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                  <Label fx:id="threed" alignment="CENTER" prefHeight="22.0" prefWidth="57.0" text="3" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -144,4 +134,7 @@
          </children>
       </Group>
    </right>
+   <top>
+      <Button fx:id="button" mnemonicParsing="false" onAction="#setAccel" text="Set Accel" BorderPane.alignment="CENTER" />
+   </top>
 </BorderPane>
